@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  // {
+  //   date: "Actualmente...",
+  //   title: "Creador de Contenido − Twitch",
+  //   description:
+  //     "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+  //   link: "https://twitch.tv/midudev",
+  // },
+  {
+    date: "Práctica Profesional | 2020 (diciembre) – 2021 (enero)",
+    title: "Soporte y Mantenimiento − Ferretería Madrid",
+    description:
+      "Encargado de la resolución eficiente de incidencias relacionadas con hardware, software y redes, así como de la implementación de actualizaciones y configuraciones de software. Mi rol incluyó proporcionar soporte técnico integral, fortaleciendo mis habilidades en la resolución proactiva de problemas y en la comunicación efectiva para garantizar una colaboración exitosa en equipos multidisciplinarios.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
